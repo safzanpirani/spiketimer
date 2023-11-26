@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/ingame.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
+    <title>Overwolf Sample App - In-Game window</title>
+  </head>
+  <body class="in-game">
+    <!-- -------------------------------- Header ------------------------------- -->
+
+    <header class="app-header">
+      <!-- <img src="../../img/header_icon.svg" /> -->
+      <h1>.</h1>
+      
+      <div class="window-controls-group">
+        <button id="minimizeButton" class="window-control window-control-minimize" />
+        <button id="closeButton" class="window-control window-control-close" />
+      </div>
+    </header>
+
+    <!-- --------------------------------- Main -------------------------------- -->
+    <main>
+      <div id="countdownTimer" class="countdown-timer">45.0</div>
+      <div id="logs">
+        <div id="events" class="logColumn">
+          <h1>      </h1>
+          <div id="eventsLog" class="dataText"></div>
+          <button id="copyEvents" class="logCopy">
+             
+          </button>
+        </div>
+        <div id="infoUpdates" class="logColumn">
+          <h1> </h1>
+          <div id="infoLog" class="dataText"></div>
+          <button id="copyInfo" class="logCopy">
+             
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./in-game.js"></script>
+  </body>
+</html>
